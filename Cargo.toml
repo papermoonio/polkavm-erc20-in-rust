@@ -1,0 +1,25 @@
+[package]
+name = "rust-contract-template"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[[bin]]
+name = "erc20"
+path = "src/erc20.rs"
+
+[profile.release]
+opt-level = "s"
+lto = "fat"
+codegen-units = 1
+
+[dependencies]
+polkavm-derive = { version = "0.23.0" }
+simplealloc = { version = "0.23.0", git = "https://github.com/paritytech/polkavm.git" }
+ethabi = { version = "18.0", default-features = false }
+
+[dependencies.uapi]
+package = "pallet-revive-uapi"
+git = "https://github.com/paritytech/polkadot-sdk.git"
+default-features = false
+features = ["unstable-hostfn"]

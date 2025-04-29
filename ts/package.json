@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "erc20": "ts-node main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "16.4.7",
+    "ethers": "^6.13.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
