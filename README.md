@@ -6,9 +6,42 @@ The repo gives an example how to write a ERC20 contract in Rust, which compatibl
 
 ### Rust
 
+```shell
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
 ### Polkatool
 
+```shell
+cargo install polkatool
+```
+
 ### Node, Typescript and Yarn
+
+It is recommented to install via nvm.
+
+```shell
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+# Download and install Node.js:
+nvm install 22
+
+# Verify the Node.js version:
+node -v # Should print "v22.15.0".
+nvm current # Should print "v22.15.0".
+
+# Verify npm version:
+npm -v # Should print "10.9.2".
+```
+
+```shell
+npm install -g typescript
+npm install -g yarn
+```
 
 ## Build
 
