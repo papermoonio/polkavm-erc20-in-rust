@@ -41,7 +41,7 @@ async function deploy(provider: JsonRpcProvider, etherWallet: Wallet) {
 }
 
 async function main() {
-    const url = "https://westend-asset-hub-eth-rpc.polkadot.io";
+    const url = "https://testnet-passet-hub-eth-rpc.polkadot.io";
     const provider = new ethers.JsonRpcProvider(url);
     config();
     let privateKey = process.env.AH_PRIV_KEY || "";
